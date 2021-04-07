@@ -87,6 +87,7 @@
 }
 #page2 {
     background: #FFFFFF;
+    margin: 15px 5px 10px 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -94,7 +95,7 @@
 }
 #page2Div1 {
     align-self: start;
-    width: 30%;
+    width: 50%;
     margin: 0px 40px 20px 20px;
     font-size: 24px;
 }
@@ -102,7 +103,7 @@
     color: var(--colorFon);
     font-size: 48px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     #page2 {
         flex-direction: column;
     }
@@ -114,27 +115,28 @@
         margin: 10px 0 10px 10%;
     }
     #page2Div2 {
-        width: 90%;
         margin: 10px 0 10px 10%;
     }
 }
+p > a:hover {
+    color:red;
+}
 #page2Div2 {
-    width: 55%;
+    width: auto;
     display: flex;
     flex-flow: row wrap;
 }
 #page2Div2 > div {
     position: relative;
-    width: 200px;
+    width: 220px;
     height: 255px;
-    margin: 15px 5px 20px 5px;
     text-align: center;
     border: 3px solid #FFFFFF;
     font-size: 16px;
 }
 #page2Div2 > div:hover {
     display: block;
-    border: 3px solid #2B4074;
+    border: 3px solid var(--colorFon);
     color: #2B4074;
 }
 #page2Div2 > div:hover div.bottomDiv {
@@ -154,4 +156,7 @@ div.bottomDiv {
     position: absolute;
     bottom: 5px;
     width: 100%;
+}
+#page3 {
+
 }
