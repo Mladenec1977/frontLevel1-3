@@ -114,9 +114,6 @@
         width: 80%;
         margin: 10px 0 10px 10%;
     }
-    #page2Div2 {
-        margin: 10px 0 10px 10%;
-    }
 }
 p > a:hover {
     color:red;
@@ -125,6 +122,7 @@ p > a:hover {
     width: auto;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 #page2Div2 > div {
     position: relative;
@@ -158,5 +156,60 @@ div.bottomDiv {
     width: 100%;
 }
 #page3 {
+    background-image: url("../images/section3/maskBac.png");
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page3Div1 {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.page3Div2 {
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.page3Div3 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
 
+}
+.page3Div3 > div {
+    align-content: center;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--colorFon);
+}
+.buttonImg {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+img.buttonImgHover {
+    /*display: none;*/
+    position: absolute;
+    top: 15px;
+    /*bottom: 30px;*/
+    left: 10px;
+    /*right: 15px;*/
+    /*height: 70%;*/
+    /*width: 80%;*/
+    opacity: 0;
+    transition: .5s ease;
+}
+.buttonImg:hover .buttonImgHover {
+    /*display: block;*/
+    opacity: 1;
 }
