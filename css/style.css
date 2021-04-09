@@ -2,22 +2,29 @@
     --colorFon: #2B4074;
     --colorNoFon: #F9F6E5;
 }
+img {
+    border-radius: 15px;
+}
+
 .buttonFon {
     background-color: var(--colorFon);
     font-size: 18px;
-    padding: 5px 20px;
+    padding: 15px 60px;
     color: white;
 }
+
 .buttonNoFon {
     background-color: var(--colorNoFon);
     font-size: 18px;
     padding: 5px 20px;
     color: var(--colorFon);
 }
+
 #page1 {
     background-color: var(--colorFon);
     color: white;
 }
+
 #page1Div1 {
     height: 100px;
     display: flex;
@@ -25,15 +32,18 @@
     justify-content: space-between;
     align-items: center;
 }
+
 #emblem {
     padding-left: 5%;
-    height: 65.73px;
+    height: 66px;
 }
+
 #buttonMenu {
     padding-right: 10%;
     width: 40px;
     height: 40px;
 }
+
 #page1Div2 {
     height: 45vw;
     background-image: url("../images/group3.png");
@@ -43,29 +53,35 @@
     justify-content: center;
     align-items: center;
 }
+
 #page1-2-1 {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    font-size:2vw;
+    font-size: 2vw;
 }
+
 .pagination {
     flex-direction: column;
     align-items: center;
     width: 70px;
 }
+
 .pagination > button {
     position: marker;
     width: 70px;
     height: 70px;
     font-size: 35px;
 }
+
 #page1-2-1 > h1 {
-    font-size:5vw;
+    font-size: 5vw;
 }
+
 #page1-2-1 > div {
     margin: 0 20% 0 20%;
 }
+
 #page1Div3 {
     height: 192px;
     display: flex;
@@ -73,18 +89,12 @@
     justify-content: space-around;
     align-items: center;
 }
-@media (max-width: 700px) {
-    #page1Div3 {
-        flex-direction: column;
-    }
-    #page1Div3 > div > p {
-        text-align: center;
-    }
-}
+
 #page1Div3 > div > p {
     font-size: 16px;
     margin: 0 5% 0 5px;
 }
+
 #page2 {
     background: #FFFFFF;
     margin: 15px 5px 10px 5px;
@@ -93,37 +103,30 @@
     justify-content: space-around;
     align-items: center;
 }
+
 #page2Div1 {
     align-self: start;
     width: 50%;
-    margin: 0px 40px 20px 20px;
+    margin: 0 40px 20px 20px;
     font-size: 24px;
 }
+
 #page2Div1 > h1 {
     color: var(--colorFon);
     font-size: 48px;
 }
-@media (max-width: 1200px) {
-    #page2 {
-        flex-direction: column;
-    }
-    #page2Div1 > h1 {
-        text-align: center;
-    }
-    #page2Div1 {
-        width: 80%;
-        margin: 10px 0 10px 10%;
-    }
-}
+
 p > a:hover {
-    color:red;
+    color: red;
 }
+
 #page2Div2 {
     width: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
+
 #page2Div2 > div {
     position: relative;
     width: 220px;
@@ -132,29 +135,35 @@ p > a:hover {
     border: 3px solid #FFFFFF;
     font-size: 16px;
 }
+
 #page2Div2 > div:hover {
     display: block;
     border: 3px solid var(--colorFon);
     color: #2B4074;
 }
+
 #page2Div2 > div:hover div.bottomDiv {
     display: block;
 }
+
 #page2Div2 > div:hover div.topDiv {
     top: 10px;
 }
+
 div.topDiv {
     position: absolute;
     top: 50px;
     width: 100%;
     color: #4A4A4A;
 }
+
 div.bottomDiv {
     display: none;
     position: absolute;
     bottom: 5px;
     width: 100%;
 }
+
 #page3 {
     background-image: url("../images/section3/maskBac.png");
     background-size: auto 100%;
@@ -163,6 +172,7 @@ div.bottomDiv {
     justify-content: center;
     align-items: center;
 }
+
 .page3Div1 {
     position: relative;
     top: 20px;
@@ -170,11 +180,13 @@ div.bottomDiv {
     font-size: 48px;
     color: #FFFFFF;
 }
+
 .page3Div2 {
     position: relative;
     top: 20px;
     text-align: center;
 }
+
 .page3Div3 {
     position: relative;
     top: 100px;
@@ -184,6 +196,7 @@ div.bottomDiv {
     text-align: center;
 
 }
+
 .page3Div3 > div {
     align-content: center;
     margin: 20px;
@@ -191,25 +204,103 @@ div.bottomDiv {
     font-weight: bold;
     color: var(--colorFon);
 }
+
 .buttonImg {
     position: relative;
     top: 0;
     left: 0;
     border-radius: 5px;
 }
+
 img.buttonImgHover {
-    /*display: none;*/
     position: absolute;
     top: 15px;
-    /*bottom: 30px;*/
     left: 10px;
-    /*right: 15px;*/
-    /*height: 70%;*/
-    /*width: 80%;*/
     opacity: 0;
     transition: .5s ease;
 }
+
 .buttonImg:hover .buttonImgHover {
-    /*display: block;*/
     opacity: 1;
+}
+
+.page4 {
+    background-color: #FFFFFF;
+    background-size: auto 100%;
+    margin: 80px 10px 40px 10px;
+}
+
+.page4 > div {
+    margin: 4%;
+}
+
+.page4 > div p {
+    font-size: 18px;
+    color: #9B9B9B;
+    margin: 0;
+}
+
+.page4 > div h1, svg {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    #page2 {
+        flex-direction: column;
+    }
+
+    #page2Div1 > h1 {
+        text-align: center;
+    }
+
+    #page2Div1 {
+        width: 80%;
+        margin: 10px 0 10px 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .page4 > div button {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 700px) {
+    .page4 > div {
+        float: left;
+        width: 40%;
+    }
+}
+@media (max-width: 700px) {
+    #page1Div3 {
+        flex-direction: column;
+    }
+
+    #page1Div3 > div p, h1, svg {
+        text-align: center;
+    }
+
+    .page4 > div p {
+        text-align: center;
+    }
+
+    .page4 {
+        width: 90%;
+        margin: 80px auto 40px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .page4 > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
 }
