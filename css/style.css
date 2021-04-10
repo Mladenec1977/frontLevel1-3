@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Roboto:wght@100&display=swap');
+
 :root {
     --colorFon: #2B4074;
     --colorNoFon: #F9F6E5;
@@ -6,10 +10,22 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: cadetblue;
+}
+
+.dosisFontFamily {
+    font-family: 'Dosis', sans-serif;
 }
 
 img {
-    border-radius: 15px;
+    border-radius: 4px;
 }
 
 .buttonFon {
@@ -26,12 +42,12 @@ img {
     color: var(--colorFon);
 }
 
-#page1 {
+.page1 {
     background-color: var(--colorFon);
     color: white;
 }
 
-#page1Div1 {
+.page1Div1 {
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -39,12 +55,12 @@ img {
     align-items: center;
 }
 
-#emblem {
+.emblem {
     padding-left: 5%;
     height: 66px;
 }
 
-#buttonMenu {
+.buttonMenu {
     background-color: #FFFFFF;
     width: 40px;
     height: 40px;
@@ -52,7 +68,7 @@ img {
 }
 
 
-#page1Div2 {
+.page1Div2 {
     height: 45vw;
     background-image: url("../images/group3.png");
     background-size: 100% auto;
@@ -62,7 +78,7 @@ img {
     align-items: center;
 }
 
-#page1-2-1 {
+.page1-2-1 {
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -82,15 +98,20 @@ img {
     font-size: 35px;
 }
 
-#page1-2-1 > h1 {
+.page1-2-1 > div h1 {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 5vw;
 }
 
-#page1-2-1 > div {
+.page1-2-1 > div p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.page1-2-1 > div {
     margin: 0 20% 0 20%;
 }
 
-#page1Div3 {
+.page1Div3 {
     height: 192px;
     display: flex;
     flex-direction: row;
@@ -98,12 +119,12 @@ img {
     align-items: center;
 }
 
-#page1Div3 > div > p {
+.page1Div3 > div > p {
     font-size: 16px;
-    margin: 0 5% 0 5px;
+    margin: 0 5% 0 15px;
 }
 
-#page2 {
+.page2 {
     background: #FFFFFF;
     margin: 15px 5px 10px 5px;
     display: flex;
@@ -112,14 +133,14 @@ img {
     align-items: center;
 }
 
-#page2Div1 {
+.page2Div1 {
     align-self: start;
     width: 50%;
-    margin: 0 40px 20px 20px;
+    margin: 0 40px 20px 40px;
     font-size: 24px;
 }
 
-#page2Div1 > h1 {
+.page2Div1 > h2 {
     color: var(--colorFon);
     font-size: 48px;
 }
@@ -128,14 +149,14 @@ p > a:hover {
     color: red;
 }
 
-#page2Div2 {
+.page2Div2 {
     width: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-#page2Div2 > div {
+.page2Div2 > div {
     position: relative;
     width: 220px;
     height: 255px;
@@ -144,17 +165,17 @@ p > a:hover {
     font-size: 16px;
 }
 
-#page2Div2 > div:hover {
+.page2Div2 > div:hover {
     display: block;
     border: 3px solid var(--colorFon);
     color: #2B4074;
 }
 
-#page2Div2 > div:hover div.bottomDiv {
+.page2Div2 > div:hover div.bottomDiv {
     display: block;
 }
 
-#page2Div2 > div:hover div.topDiv {
+.page2Div2 > div:hover div.topDiv {
     top: 10px;
 }
 
@@ -172,7 +193,7 @@ div.bottomDiv {
     width: 100%;
 }
 
-#page3 {
+.page3 {
     background-image: url("../images/section3/maskBac.png");
     background-size: auto 100%;
     display: flex;
@@ -248,7 +269,7 @@ img.buttonImgHover {
     margin: 0;
 }
 
-.page4 > div h1, svg {
+.page4 > div h2, svg {
     font-size: 48px;
     margin: 20px 0;
 }
@@ -274,19 +295,45 @@ img.buttonImgHover {
 .page5Div2 {
     margin-bottom: 100px;
 }
+
+.row {
+
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+}
+.imgHoverResponsive {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.imgHoverResponsive > img {
+    width: 90%;
+    margin-left: 5%;
+}
 /**********************************************************************************/
 @media (max-width: 1200px) {
     #page2 {
         flex-direction: column;
     }
 
-    #page2Div1 > h1 {
+    #page2Div1 > h2 {
         text-align: center;
     }
 
     #page2Div1 {
         width: 80%;
         margin: 10px 0 10px 10%;
+    }
+    .column {
+        flex: 33%;
+        max-width: 33%;
     }
 }
 
@@ -296,6 +343,10 @@ img.buttonImgHover {
         display: flex;
         justify-content: center;
     }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -303,7 +354,7 @@ img.buttonImgHover {
         flex-direction: column;
     }
 
-    #page1Div3 > div p, h1, svg {
+    #page1Div3 > div p, svg {
         text-align: center;
     }
 
@@ -326,5 +377,9 @@ img.buttonImgHover {
         justify-content: space-around;
         align-items: center;
         width: 100%;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
     }
 }
