@@ -318,7 +318,7 @@ img.buttonImgHover {
     vertical-align: 5px;
 }
 
-.imgHoverResponsive > img {
+.imgPage5 {
     width: 90%;
     /*margin-left: 5%;*/
 }
@@ -329,6 +329,13 @@ img.buttonImgHover {
     left: 0;
     width: 90%;
     height: 100%;
+    opacity: 0;
+}
+
+.imgHoverIcon {
+    position: absolute;
+    top: 35%;
+    left: 42%;
     opacity: 0;
 }
 
@@ -345,6 +352,9 @@ img.buttonImgHover {
 }
 
 .imgHoverResponsive:hover .imgHoverPage5 {
+    opacity: 1;
+}
+.imgHoverResponsive:hover .imgHoverIcon {
     opacity: 1;
 }
 .imgHoverResponsive:hover .imgHoverWrit {
