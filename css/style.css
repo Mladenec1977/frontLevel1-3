@@ -29,6 +29,10 @@ img {
     border-radius: 4px;
 }
 
+span {
+    color: var(--colorFon);
+}
+
 .buttonFon {
     background-color: var(--colorFon);
     font-size: 18px;
@@ -354,13 +358,47 @@ img.buttonImgHover {
 .imgHoverResponsive:hover .imgHoverPage5 {
     opacity: 1;
 }
+
 .imgHoverResponsive:hover .imgHoverIcon {
     opacity: 1;
 }
+
 .imgHoverResponsive:hover .imgHoverWrit {
     background-color: var(--colorFon);
     color: #FFFFFF;
     bottom: 20px;
+}
+
+.page6 {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page6Div1 {
+    margin: 90px 0 30px 0;
+}
+.page6Div2 {
+    width: 60%;
+    margin-bottom: 10vw;
+}
+.page6Div2 > p {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+}
+.page6Div2 > h5 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.page7 {
+    background-color: var(--colorFon);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /**********************************************************************************/
@@ -394,6 +432,9 @@ img.buttonImgHover {
     .column {
         flex: 50%;
         max-width: 50%;
+    }
+    .page6Div1 {
+        margin: 40px 0 5px 0;
     }
 }
 
