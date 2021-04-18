@@ -29,7 +29,7 @@ img {
     border-radius: 4px;
 }
 
-span {
+b > span {
     color: var(--colorFon);
 }
 
@@ -43,7 +43,12 @@ span {
 .buttonNoFon {
     background-color: var(--colorNoFon);
     font-size: 18px;
-    padding: 5px 20px;
+    padding: 15px 60px;
+    color: var(--colorFon);
+}
+
+.btn:hover {
+    background-color: var(--colorNoFon);
     color: var(--colorFon);
 }
 
@@ -72,7 +77,6 @@ span {
     margin: 0 10% 0 0;
 }
 
-
 .page1Div2 {
     height: 45vw;
     background-image: url("../images/group3.png");
@@ -85,24 +89,63 @@ span {
 
 .page1-2-1 {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     font-size: 2vw;
 }
 
-.pagination {
-    flex-direction: column;
-    align-items: center;
-    width: 70px;
+/*******************************************************************************************************************/
+.page1Div2 .owl-carousel .owl-nav button.owl-next, .page1Div2 .owl-carousel .owl-nav button.owl-prev {
+    background: var(--colorFon);
 }
 
-.pagination > button {
-    position: marker;
+.page1Div2 .owl-carousel .owl-nav button.owl-next:hover, .page1Div2 .owl-carousel .owl-nav button.owl-prev:hover {
+    background: var(--colorNoFon);
+    color: var(--colorFon);
+}
+
+.page6 .owl-theme .owl-nav [class*=owl-] {
+    display: none;
+}
+
+div.owl-dots {
+    margin: 3vw 0;
+}
+
+.owl-stage-outer {
+    width: 100%;
+}
+
+.page1Div2 .owl-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-nav > button {
     width: 70px;
     height: 70px;
-    font-size: 35px;
 }
 
+.owl-nav > button > span {
+    font-size: 50px;
+    color: var(--colorNoFon);
+}
+
+.page1Div2 .owl-carousel .owl-nav button.owl-next:hover span,
+.page1Div2 .owl-carousel .owl-nav button.owl-prev:hover span {
+    font-size: 50px;
+    color: var(--colorFon);
+}
+
+/*******************************************************************************************************************/
 .page1-2-1 > div h1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 5vw;
@@ -113,7 +156,7 @@ span {
 }
 
 .page1-2-1 > div {
-    margin: 0 20% 0 20%;
+    margin: 0 auto;
 }
 
 .page1Div3 {
@@ -377,22 +420,26 @@ img.buttonImgHover {
     align-items: center;
 }
 
+.page6 button {
+    display: none;
+}
+
 .page6Div1 {
     margin: 90px 0 30px 0;
 }
 
 .page6Div2 {
-    width: 60%;
+    width: 90%;
     margin-bottom: 10vw;
 }
 
-.page6Div2 > p {
+.page6Div2 > div p {
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 36px;
 }
 
-.page6Div2 > h5 {
+.page6Div2 > div h5 {
     text-align: center;
     font-size: 24px;
 }
@@ -482,6 +529,7 @@ img.buttonImgHover {
     background-color: #F9F6E5;
     font-size: 16px;
 }
+
 .pageEnd > a {
     width: 100%;
     text-decoration: none;
@@ -494,11 +542,12 @@ img.buttonImgHover {
     justify-content: flex-end;
     align-items: center;
 }
+
 .pageEndDiv > h2 {
     color: black;
-
     margin: 15px 10px;
 }
+
 /*********************************************   END  *************************************/
 @media (max-width: 1200px) {
     .page2 {
@@ -616,5 +665,22 @@ img.buttonImgHover {
         margin-top: 20px;
         width: 100%;
         text-align: center;
+    }
+
+    .pageEndDiv {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonFon {
+        font-size: 10px;
+        padding: 5px 40px;
+    }
+
+    .page1Div2 .owl-theme .owl-nav [class*=owl-] {
+        display: none;
     }
 }
